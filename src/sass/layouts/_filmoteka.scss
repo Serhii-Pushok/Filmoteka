@@ -1,0 +1,38 @@
+/* Hero Section Styles */
+
+.filmoteka {
+  @include section();
+
+  min-width: 320px;
+  max-width: 480px;
+  min-height: calc(100vh - 215px - 102px);
+
+  @include mq(tab) {
+    @include section(60px, 60px);
+    max-width: 768px;
+    min-height: calc(100vh - 215px - 79px);
+  }
+
+  @include mq(desk) {
+    @include section(60px, 60px);
+    max-width: 1280px;
+  }
+}
+
+.filmoteka__pagination {
+  margin-top: 20px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  @include mq(tab) {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+}
+
+.filmoteka__list {
+  margin-bottom: 15px;
+}
+.filmoteka__subtitle {
+  text-align: center;
+  padding-top: 64px;
+}

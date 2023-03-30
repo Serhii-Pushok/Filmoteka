@@ -1,0 +1,44 @@
+// Fonts
+@import './base/fonts';
+
+// Utils
+@import './utils/modern-normalize';
+@import './utils/variables';
+@import './utils/mixin';
+
+@import '/node_modules/basiclightbox/dist/basicLightbox.min.css';
+
+// Base
+@import './base/base';
+@import './base/reset';
+@import './base/typography';
+@import './base/grid';
+
+// Components
+@import './components/backdrop';
+@import './components/button';
+@import './components/container';
+@import './components/navigation';
+@import './components/logo';
+@import './components/pagination';
+@import './components/modal';
+@import './components/modal-students';
+@import './components/movie-details-card';
+@import './components/arrow-up';
+@import './components/theme';
+@import './components/show-more-btn';
+
+@import './components/movie-details-card';
+
+@import './components/arrow-up';
+
+@import './components/search-form';
+@import './components/card';
+
+// Layouts
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/filmoteka';
+
+// Hidden
+@import './utils/hidden';

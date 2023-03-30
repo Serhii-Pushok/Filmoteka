@@ -1,0 +1,26 @@
+/* Grid Styles */
+
+.grid {
+  gap: var(--grid-indent);
+  flex-wrap: wrap;
+
+  @include mq(tab) {
+    gap: 32px;
+  }
+
+  @include mq(desk) {
+    gap: 32px 16px;
+  }
+
+  &__item {
+    @include flex-based(1);
+
+    @include mq(tab) {
+      @include flex-based(2, 32px);
+    }
+
+    @include mq(desk) {
+      @include flex-based(3, 16px);
+    }
+  }
+}

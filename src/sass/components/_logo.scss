@@ -1,0 +1,50 @@
+/* Logo Styles */
+
+.logo {
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-light-color);
+    transition: color var(--animation);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--main-accent-color);
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+
+    @include mq(mob-only) {
+      display: none;
+    }
+  }
+}
+
+@keyframes pulsate {
+  from {
+    transform: scale3d(1, 1, 1);
+    stroke: var(--main-light-color);
+    filter: drop-shadow(none);
+  }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+    stroke: var(--main-accent-color);
+    filter: drop-shadow(0 0 2px #272e36);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+    stroke: var(--main-light-color);
+    filter: drop-shadow(none);
+  }
+}
+
+.icon {
+  fill: transparent;
+  stroke: var(--main-light-color);
+  animation: pulsate 2.5s infinite alternate;
+}
